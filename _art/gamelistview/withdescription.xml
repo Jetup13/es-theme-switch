@@ -1,64 +1,74 @@
 <theme>
-<formatVersion>7</formatVersion>
+	<formatVersion>7</formatVersion>
 
 	<view name="detailed,video">
-	<textlist name="gamelist">
-		<fontPath>./../_art/Acre.otf</fontPath>
-		<fontSize>0.04</fontSize>
-		<alignment>left</alignment>
-		<horizontalMargin>0.01</horizontalMargin>
-		<origin>1.05 0.075</origin>
-		<lineSpacing>1.4</lineSpacing>
-		<size>.49 .78</size>
-	</textlist>
-	
-	<video name="md_video">
-		<origin>0.5 0.5</origin>
-		<pos>0.75 0.4</pos>
-		<maxSize>0.48 0.48</maxSize>
-		<delay>1</delay>
-		<zIndex>2</zIndex>         
-		<showSnapshotNoVideo>true</showSnapshotNoVideo>
-		<showSnapshotDelay>true</showSnapshotDelay>
-		<effect>none</effect>
-	</video>
+		<textlist name="gamelist">
+			<fontPath>./../_art/Acre.otf</fontPath>
+			<fontSize>0.04</fontSize>
+			<alignment>left</alignment>
+			<horizontalMargin>0.01</horizontalMargin>
+			<origin>1.05 0.075</origin>
+			<lineSpacing>1.4</lineSpacing>
+			<size>.49 .78</size>
+		</textlist>
 
-	<text name="md_description">
-		<pos>0.50 0.685</pos>
-		<size>0.5 0.244</size>
-		<alignment>center</alignment>
-		<color>${mainColor}</color>
-		<fontSize>0.032</fontSize>
-		<fontPath>./../_art/Acre.otf</fontPath>
-	</text>
+		<text name="md_description">
+			<pos>0.50 0.685</pos>
+			<size>0.5 0.244</size>
+			<alignment>center</alignment>
+			<color>${mainColor}</color>
+			<fontSize>0.032</fontSize>
+			<fontPath>./../_art/Acre.otf</fontPath>
+		</text>
 
-	<text name="md_lbl_players, md_players, md_lbl_developer, md_developer, md_lbl_publisher, md_publsher, md_lbl_genre, md_genre, md_lbl_playcount, md_playcount, md_lbl_lastplayed, md_lbl_releasedate, md_lbl_rating">
-		<pos>1 1</pos>
-	</text>
+		<text name="md_lbl_players, md_players, md_lbl_developer, md_developer, md_lbl_publisher, md_publsher, md_lbl_genre, md_genre, md_lbl_playcount, md_playcount, md_lbl_lastplayed, md_lbl_releasedate, md_lbl_rating">
+			<pos>1 1</pos>
+		</text>
 
-	<datetime name="md_lastplayed, md_releasedate">
-		<pos>1 1</pos>
-	</datetime>
+		<datetime name="md_lastplayed, md_releasedate">
+			<pos>1 1</pos>
+		</datetime>
 
-	<rating name="md_rating">
-		<pos>1 1</pos>
-	</rating>
+		<rating name="md_rating">
+			<pos>1 1</pos>
+		</rating>
 
-	<text name="system_name_1" extra="true">
-		<text>${system.fullName}</text>
-		<size>0.95 0.015</size>
-		<pos>0.055 0.08</pos>
-		<origin>0 0</origin>
-		<fontSize>0.058</fontSize>
-		<alignment>left</alignment>
-		<fontPath>${mainFont}</fontPath>
-	</text>
+		<text name="system_name_1" extra="true">
+			<text>${system.fullName}</text>
+			<size>0.95 0.015</size>
+			<pos>0.055 0.08</pos>
+			<origin>0 0</origin>
+			<fontSize>0.058</fontSize>
+			<alignment>left</alignment>
+			<fontPath>${mainFont}</fontPath>
+		</text>
 
-	<image name="arrowblock" extra="true">
-		<pos>0.01 0.06</pos>
-		<path>./../_art/assets/arrow_block.png</path>
-		<maxSize>.05 .05</maxSize>
-		<origin>0 0</origin>
-	</image>
+		<image name="arrowblock" extra="true">
+			<pos>0.01 0.06</pos>
+			<path>./../_art/assets/arrow_block.png</path>
+			<maxSize>.05 .05</maxSize>
+			<origin>0 0</origin>
+		</image>
+	</view>
+
+	<view name="video">
+		<video name="md_video">
+			<origin>0.5 0.5</origin>
+			<pos>0.75 0.4</pos>
+			<maxSize>0.48 0.48</maxSize>
+			<delay>1</delay>
+			<zIndex>2</zIndex>
+			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+			<showSnapshotDelay>true</showSnapshotDelay>
+			<effect>none</effect>
+		</video>
+	</view>
+
+	<view name="detailed">
+		<image name="md_image">
+			<origin>0.5 0.5</origin>
+			<pos>0.75 0.4</pos>
+			<maxSize>0.48 0.48</maxSize>
+		</image>
 	</view>
 </theme>
