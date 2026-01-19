@@ -1,0 +1,23 @@
+<theme>
+<formatVersion>7</formatVersion>
+<include>./../theme.xml</include>
+
+<view name="basic, detailed, video, grid">
+  <text name="nameLabel" extra="true">
+    <text>GameTank</text>
+  </text>
+</view>    
+
+<view name="system">
+  <text name="sys_line2" extra="true">
+    <text>GameTank</text>
+
+</text>
+  <text name="shortdescription" extra="true">
+   <text>2020  ·  Fantasy Computer</text>
+  </text>
+  <text name="longdescription" extra="true">
+   <text>The GameTank is an open source 8-bit fantasy consoles like the Pico-8 or TIC-80</text>
+  </text>
+ </view>
+</theme>
